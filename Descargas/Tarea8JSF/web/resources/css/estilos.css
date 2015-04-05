@@ -1,0 +1,48 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22/10/2014, 01:46:33 PM
+    Author     : Cheko
+*/
+
+.msj
+{
+    color: red;
+}
+
+.tabla
+{
+    border: thin double blueviolet;
+}
+
+.caption
+{
+    font-family: sans-serif;
+    font-size: 17px;
+    color: brown;
+}
+
+.header
+{
+    text-align: center;
+    font-style: italic;
+    color: blue;
+}
+.Lista
+{
+    text-align: center;
+    font-style: normal;
+    color: coral;
+}
+
+.pie
+{
+    color: red;
+    font-style: oblique;
+    marquee-style: slide;
+    marquee-direction: forward;
+    marquee-loop: infinite;
+}

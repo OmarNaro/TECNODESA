@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Tarea 8 Práctica 2 Unidad 2</title>
+        <h:outputStylesheet library="css" name="estilos.css"></h:outputStylesheet>
+    </h:head>
+    <h:body>
+        <div>
+            <h1>Tarea 8 Práctica 2 Unidad 2</h1>
+            <hr/>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:panelGroup>
+                        <b>login</b>
+                        <h:inputText id="login" label="login" value="#{login.user}" validatorMessage="Debe ser un correo válido">
+                        <f:validateRegex pattern="([^.@]+)(\.[^.@]+)*@([^.@]+\.)+([^.@]+).{1,}" />
+                        </h:inputText>
+                    </h:panelGroup>
+                    <h:message for="login" class="msj"/>
+                    <h:panelGroup>
+                        <b>password</b>
+                        <h:inputSecret id="password" label="password" value="#{login.password}" validatorMessage="password: Error de validación: se necesita un valor.">
+                        <f:validateLength minimum="8"/>
+                        </h:inputSecret>
+                    </h:panelGroup>
+                    <h:message for="password" class="msj"/>
+                    <h:panelGroup>
+                        <h:commandButton value="Entrar" action="#{login.Logear}"/>
+                        <h:commandButton value="Cancelar" />
+                    </h:panelGroup>
+                </h:panelGrid>
+            </h:form>
+        </div>
+    </h:body>
+</html>
