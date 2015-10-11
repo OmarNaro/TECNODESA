@@ -9,11 +9,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- *
- * @author Omar
- */
-public class TablaUsuario implements InterfaceUsuario {
+
+     public class TablaUsuario implements InterfaceUsuario {
 
     private Map<String, Usuario> usuarios;
     private ArrayList<Usuario> users;
@@ -21,11 +18,11 @@ public class TablaUsuario implements InterfaceUsuario {
     public TablaUsuario() {
         users = new ArrayList<>();
         usuarios = new HashMap<>();        
-        addUsuario(new Usuario("Lopez Avila", "Juan Antonio", "patito@gmail.com", "123456abc"));
-        addUsuario(new Usuario("Ortega Viera", "Alma", "zodiaco@hotmail.com", "123456abc"));
-        addUsuario(new Usuario("Casa Jimenez", "Felicia", "limbo@yahoo.com", "123456abc"));
-        addUsuario(new Usuario("Lopez Gutierrez", "Francisco", "epcilon@abu.com", "123456abc"));
-        addUsuario(new Usuario("Vertti Guzman", "Imelda", "array@msj.com", "123456abc"));
+        addUsuario(new Usuario("Lopez Avila", "Juan Antonio", "patito@gmail.com", "12345678"));
+        addUsuario(new Usuario("Ortega Viera", "Alma", "zodiaco@hotmail.com", "12345678"));
+        addUsuario(new Usuario("Casa Jimenez", "Felicia", "limbo@yahoo.com", "12345678"));
+        addUsuario(new Usuario("Lopez Gutierrez", "Francisco", "epcilon@abu.com", "12345678"));
+        addUsuario(new Usuario("Vertti Guzman", "Imelda", "array@msj.com", "12345678"));
     }
 
     private void addUsuario(Usuario usuario) {

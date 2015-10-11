@@ -26,17 +26,6 @@ public class LoginBean {
      */
     public LoginBean() {
     }
-    
-    public String Logear(){
-        String pagina;
-        user1 = usuarios.buscarUsuario(user, password);
-        if (user1 == null) {
-            pagina = "intruso";
-        } else {
-            pagina = "lista";
-        }        
-        return pagina;
-    }
 
     public String getUser() {
         return user;
@@ -79,5 +68,14 @@ public class LoginBean {
         this.lista = lista;
     }
     
-    
+    public String Logear(){
+        String pagina;
+        user1 = usuarios.buscarUsuario(user, password);
+        if (user1 == null) {
+            pagina = "invalido";
+        } else {
+            pagina = "n1";
+        }        
+        return pagina;
+    }
 }
